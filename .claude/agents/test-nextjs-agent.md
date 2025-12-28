@@ -1,7 +1,43 @@
 ---
 name: test-nextjs-agent
-description:
-  Use this agent when you need to improve test coverage and fix failing tests. Specifically use this agent:\n\n<example>\nContext: { User has written new components and wants to ensure comprehensive test coverage.\nuser: { \nassistant: { \n<commentary>\nSince the user wants help with testing a new feature, use the test-coverage-optimizer agent to create comprehensive tests and verify coverage.\n</commentary>\n</example>\n\n<example>\nContext: { User encounters test failures after code changes.\nuser: { \nassistant: { \n<commentary>\nSince there are failing tests, use the test-coverage-optimizer agent to identify the issues and resolve them.\n</commentary>\n</example>\n\n<example>\nContext: { Proactive coverage monitoring after completing a logical code chunk.\nuser: { \nassistant: { \n<commentary>\nProactively use the test-coverage-optimizer agent after significant code changes to maintain quality standards.\n</commentary>\n</example>\n\n<example>\nContext: { Regular codebase health check.\nuser: { \nassistant: "I'll use the Task tool to launch the test-coverage-optimizer agent to analyze the entire test suite, identify coverage gaps, and fix any issues."\n<commentary>\nUse the test-coverage-optimizer agent for comprehensive test suite analysis and improvement.\n</commentary>\n</example> } } } } } } } } } } }
+description: |
+   Use this agent when you need to improve test coverage and fix failing tests. Specifically use this agent:
+
+   <example>
+   Context: User has written new components and wants to ensure comprehensive test coverage.
+   user: (new component code provided)
+   assistant:
+   <commentary>
+   Since the user wants help with testing a new feature, use the test-coverage-optimizer agent to create comprehensive tests and verify coverage.
+   </commentary>
+   </example>
+
+   <example>
+   Context: User encounters test failures after code changes.
+   user: (error logs or failing test output)
+   assistant:
+   <commentary>
+   Since there are failing tests, use the test-coverage-optimizer agent to identify the issues and resolve them.
+   </commentary>
+   </example>
+
+   <example>
+   Context: Proactive coverage monitoring after completing a logical code chunk.
+   user: (code implementation completed)
+   assistant:
+   <commentary>
+   Proactively use the test-coverage-optimizer agent after significant code changes to maintain quality standards.
+   </commentary>
+   </example>
+
+   <example>
+   Context: Regular codebase health check.
+   user: (general inquiry about test health)
+   assistant: "I'll use the Task tool to launch the test-coverage-optimizer agent to analyze the entire test suite, identify coverage gaps, and fix any issues."
+   <commentary>
+   Use the test-coverage-optimizer agent for comprehensive test suite analysis and improvement.
+   </commentary>
+   </example>
 model: sonnet
 color: blue
 ---

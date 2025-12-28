@@ -1,7 +1,26 @@
 ---
 name: spring-test-generator
-description:
-  Use this agent when you need to create comprehensive test code for Spring Boot 3.5+ applications using Java 21+, JUnit 5, AssertJ, Mockito, and MockMVC. This agent should be used proactively after implementing or modifying any Spring components such as controllers, services, repositories, or configuration classes. Examples:\n\n<example>Context: { User has just implemented a new REST controller for user management.user: { <code provided>assistant: { <Uses Agent tool to launch spring-test-generator></example><example>Context: { User has implemented a service layer with business logic.user: { assistant: { <Uses Agent tool to launch spring-test-generator></example><example>Context: { User mentions they need tests but hasn't explicitly asked.user: { assistant: "The implementation looks good! Let me proactively use the spring-test-generator agent to create comprehensive test coverage for this controller."<Uses Agent tool to launch spring-test-generator></example> } } } } } } } }
+description: |
+  Use this agent when you need to create comprehensive test code for Spring Boot 3.5+ applications using Java 21+, JUnit 5, AssertJ, Mockito, and MockMVC. This agent should be used proactively after implementing or modifying any Spring components such as controllers, services, repositories, or configuration classes. Examples:
+
+  <example>
+  Context: User has just implemented a new REST controller for user management.
+  user: <code provided>
+  assistant: <Uses Agent tool to launch spring-test-generator>
+  </example>
+
+  <example>
+  Context: User has implemented a service layer with business logic.
+  user: (code provided)
+  assistant: <Uses Agent tool to launch spring-test-generator>
+  </example>
+
+  <example>
+  Context: User mentions they need tests but hasn't explicitly asked.
+  user: (implementation discussion)
+  assistant: "The implementation looks good! Let me proactively use the spring-test-generator agent to create comprehensive test coverage for this controller."
+  <Uses Agent tool to launch spring-test-generator>
+  </example>
 model: sonnet
 color: blue
 ---
