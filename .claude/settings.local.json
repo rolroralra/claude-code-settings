@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git rev-parse:*)",
+      "Bash(gh auth status:*)",
+      "Bash(gh label create:*)",
+      "Bash(gh label:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "tosspayments-integration-guide"
+  ]
+}
