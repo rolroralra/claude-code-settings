@@ -9,6 +9,14 @@
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
-    "tosspayments-integration-guide"
+    "tosspayments-integration-guide",
+    "magic",
+    "context7",
+    "github",
+    "supabase",
+    "mysql",
+    "mcp_server_mysql",
+    "postgres",
+    "MongoDB"
   ]
 }
