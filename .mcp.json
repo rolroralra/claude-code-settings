@@ -25,6 +25,16 @@
       "type": "http",
       "url": "https://mcp.supabase.com/mcp?project_ref=imoiimvhbrscvohimbwn&read_only=true"
     },
+    "TestSprite": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@testsprite/testsprite-mcp@latest"
+      ],
+      "env": {
+        "API_KEY": "your_api_key"
+      }
+    },
     "mysql": {
       "command": "uv",
       "args": [
