@@ -1,7 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(gh label create:*)",
+      "Bash(gh label:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)",
+      "Bash(gh issue:*)",
+      "Bash(./gradlew test:*)",
+      "Bash(timeout 60 ./gradlew test:*)",
+      "Bash(tee:*)",
+      "Bash(pkill:*)",
+      "Bash(./gradlew compileTestJava:*)",
+      "Bash(unzip:*)",
+      "Bash(./gradlew compileJava:*)",
+      "Bash(docker exec:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(./gradlew clean build:*)",
+      "Bash(git restore:*)",
+      "Bash(git commit:*)",
+      "Bash(python3:*)"
     ]
   },
   "hooks": {
@@ -38,5 +58,9 @@
         ]
       }
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "context7",
+    "github"
+  ]
 }
